@@ -59,13 +59,17 @@ console.log(threeLetterWords);
 // მეექვსე დავალება
 
 //I
-let array= [['academy', 'of'], ['digital', 'industries']].reduce(function(accumulator,currentValue) {
-    return accumulator.concat(currentValue);
+let array2= [['academy', 'of'], ['digital', 'industries']].reduce(function(accumulator,currentValue) {
+    currentValue.forEach(item => {
+        accumulator += item + ' ';
+    })
+    return accumulator
     },
     []
 )
 
-console.log(array);
+console.log(array2);
+
 
 //II
 let array5= ['academy', 'of', 'digital', 'industries'];
