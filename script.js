@@ -58,17 +58,33 @@ console.log(threeLetterWords);
 
 // მეექვსე დავალება
 
-// let array= [['academy', 'of'], ['digital', 'industries']].reduce(function(accumulator,currentValue) {
-//     return accumulator.concat(currentValue);
-//     },
-//     []
-// )
+//I
+let array= [['academy', 'of'], ['digital', 'industries']].reduce(function(accumulator,currentValue) {
+    return accumulator.concat(currentValue);
+    },
+    []
+)
 
-// console.log(array);
+console.log(array);
+
+//II
+let array5= ['academy', 'of', 'digital', 'industries'];
+
+console.log(array5.join(' '));
 
 // მეშვიდე დავალება
 
-// let item = [12, ‘google’, 32, null, ‘yahoo’, 25];
+let item = [12, 'google', 32, null, 'yahoo', 25];
+
+let newItem = item.map(function(x) {
+    if(typeof x == 'number') {
+        return x * x
+    } else if(typeof x == 'string') {
+        return x.toUpperCase();
+    } else {
+        return x
+    }
+});
 
 // მერვე დავალება
 
